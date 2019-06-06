@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hero">
+
+    <!--英雄名-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英雄名："
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月半泉"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!--体力值-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体力值："
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/t_MP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/100"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!--状态-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态："
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/t_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="休息状态"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!--&lt;!&ndash;占位&ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/doingGif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/rest"/>
+
+    <Button
+        android:id="@+id/b_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="进行休息"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/b_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="进行防御"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/b_normalAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="普通攻击"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/b_skillAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="技能攻击"
+        android:textSize="30sp"/>
+
+</LinearLayout>
